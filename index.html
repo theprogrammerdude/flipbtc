@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./btc.svg" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <title>Flip a Bitcoin</title>
+  </head>
+  <body
+    class="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen flex items-center justify-center"
+  >
+    <div
+      class="flex flex-col items-center justify-center bg-white h-2/3 w-1/2 rounded-[12px]"
+    >
+      <div class="flex justify-between w-4/5 relative -top-10 font-bold">
+        <div>
+          <p>Heads: <span id="heads"></span></p>
+          <p>Tails: <span id="tails"></span></p>
+        </div>
+        <p>
+          Price : $ <span id="avgPrice" class="decoration-[#F7931A]"></span>
+        </p>
+      </div>
+      <img src="./btc.svg" alt="bitcoin image" class="h-1/2" id="coin" />
+      <div class="w-4/5 flex justify-between items-center relative -bottom-10">
+        <button
+          class="text-[#F7931A] border border-[#F7931A] hover:bg-[#F7931A] hover:text-white active:bg-[#F7931A] font-bold uppercase px-8 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          type="button"
+          id="flip"
+        >
+          Flip
+        </button>
+        <button
+          class="text-white bg-[#F7931A] font-bold uppercase px-8 py-3 rounded outline-none focus:outline-none mr-1 mb-1"
+          id="reset"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>
